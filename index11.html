@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <table border ="3">
+        <tr>
+            <td> <img src="./klaki 2D.jpg" width="300"></td>
+            <td><img src="./pushpa.jpg" width="400"></td>
+            <td><img src="./devara.jpg" width="230"></td>
+            <td><img src="./hi nanna.jpg" width="300"></td>
+
+
+        </tr>
+        <tr>
+            <td>
+                <audio controls >
+                    <source src="./Theme of Kalki.mp3"type="audio/mp3">
+
+
+                </audio>
+
+            </td>
+            <td>
+              <audio controls >
+                <source src="./Sooseki.mp3"  type="audio/mp3">
+
+              </audio>  
+            </td>
+
+            <td>
+                <audio controls>
+                    <source src="./Chuttamalle.mp3" type="audio/mp3">
+
+                </audio>
+            </td>
+            <td>
+<audio controls> 
+<source src="./hi nanna.mp3" type="audio/mp3">
+</audio>
+            
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="./klaki 2D.jpg" download>download </a>
+            </td>
+            <td>
+              <a href="./puspa 2.jpg" download> download</a>  
+            </td>
+            <td>
+                <a href="./devara.png" download> download</a>
+            </td>
+            <td>
+                <a href="./hi nanna.png" download >download</a>
+            </td>
+        </tr>
+    </table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
